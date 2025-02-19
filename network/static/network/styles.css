@@ -1,0 +1,75 @@
+.nav-btn, .nav-btn:active, .nav-btn:focus {
+    border: none;
+    outline: none;
+    background: #00000000;
+}
+
+.btn-disable {
+    cursor: not-allowed;
+    opacity: 50%;
+}
+
+#profileLink {
+    text-decoration: none;
+    color: black;
+}
+
+.card-text {
+    white-space: pre-wrap;
+    display: block;
+    word-wrap: break-word;
+}
+
+#main-feed {
+    padding: 0;
+    background-color: rgb(209, 209, 209);
+    min-height: 100vh;
+}
+
+#userLink {
+    color: rgba(0, 0, 0, 0.646);
+}
+
+#userLink:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-norm {
+    border: 0.08rem solid rgba(190, 190, 190, 0.479);
+    background-color: rgb(233, 233, 233);
+}
+
+.btn-norm:hover {
+    background-color: rgb(184, 184, 184);
+    color: white;
+}
+
+.btn-liked {
+    border: 0.08rem solid rgba(180, 53, 53, 0.429);
+    background-color: rgba(255, 77, 77, 0.416);
+}
+
+.btn-liked:hover {
+    background-color: rgba(216, 61, 61, 0.817);
+    color: white;
+}
+
+.btn-edit-sm {
+    padding: 0.2rem 0.4rem;
+    line-height: 1.4;
+    border-radius: 0.5rem;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.likeBtn {
+    padding: 0.1rem 0.3rem;
+}
+
+.card {
+    background-color: rgb(245, 245, 245);
+}

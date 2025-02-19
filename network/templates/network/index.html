@@ -1,0 +1,27 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+<h2 class="page-title m-2 text-center">All Posts</h2>
+
+<div class="container-fluid">
+    <hr>
+        {% if user.is_authenticated %}
+        <div class="card mt-2 newPostForm">
+            <div class="card-body">
+                <form id="newPost">
+                    <textarea class="form-control" id="postDescription" rows="2" required placeholder="What's new?!" style="height: 75px;" maxlength="500" oninput="charLength()"></textarea>
+                    <div class="row">
+                        <div class="col align-self-center"><input type="submit" class="btn btn-primary" value="Post"></div>
+                        <div class="col text-right"><p><p id="charlength" style="display:inline;"></p>/500</p></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+        <div id="posts">
+        </div>
+
+        <div id="paginateNav" class="mt-2">
+        </div>
+    </div>
+{% endblock %}
